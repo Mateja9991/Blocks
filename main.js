@@ -3,7 +3,7 @@ import { Ball } from "./ball.js"
 import { Slider } from "./slider.js"
 import { User } from "./user.js"
 
-fetch("https://127.0.0.1:5001/Blocks/PreuzmiUsera/Guest").then(
+fetch("https://192.168.2.109:5001/Blocks/PreuzmiUsera/Guest").then(
     p => {
         p.json().then(data => {
             console.log(data);
@@ -318,7 +318,7 @@ function findPosition(sign, event) {
 //setInterval(getList, 5000);
 function getList() {
     lista.querySelectorAll('*').forEach(el => el.remove());
-    fetch("https://127.0.0.1:5001/Blocks/PreuzmiUsere").then(p => {
+    fetch("https://192.168.2.109:5001/Blocks/PreuzmiUsere").then(p => {
         p.json().then(data => {
             sort(data);
             data.forEach(user => {
@@ -344,7 +344,7 @@ function authenticate() {
     let password = document.querySelector(".pswin").value;
     if (username == null || password == null)
         return;
-    fetch("https://127.0.0.1:5001/Blocks/PreuzmiUsera/" + username).then(
+    fetch("https://192.168.2.109:5001/Blocks/PreuzmiUsera/" + username).then(
         p => {
 
             if (p.status === 204) {
@@ -371,7 +371,7 @@ function authenticate() {
     );
 }
 function fetchLopta(username) {
-    fetch("https://127.0.0.1:5001/Blocks/PreuzmiLoptu/" + username).then(
+    fetch("https://192.168.2.109:5001/Blocks/PreuzmiLoptu/" + username).then(
         p => {
             if (p.status === 204) {
                 alert("Ne postoji user.");
@@ -391,7 +391,7 @@ function fetchLopta(username) {
     );
 }
 function fetchSlider(username) {
-    fetch("https://127.0.0.1:5001/Blocks/PreuzmiSlidera/" + username).then(
+    fetch("https://192.168.2.109:5001/Blocks/PreuzmiSlidera/" + username).then(
         p => {
             if (p.status === 204) {
                 alert("Ne postoji user.");
@@ -430,7 +430,7 @@ function post() {
             color: sliderColor
         }
     }));
-    fetch("https://127.0.0.1:5001/Blocks/UpisiUsera/", {
+    fetch("https://192.168.2.109:5001/Blocks/UpisiUsera/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -483,7 +483,7 @@ function deleteUser() {
         alert("Guest se ne moze obrisati.");
         return;
     }
-    fetch("https://127.0.0.1:5001/Blocks/IzbrisiUsera/" + user.username, {
+    fetch("https://192.168.2.109:5001/Blocks/IzbrisiUsera/" + user.username, {
         method: "DELETE",
         headers: {
             'Content-type': 'application/json'
@@ -593,7 +593,7 @@ function deleteUser() {
 
 
 function deleteLopta() {
-    fetch("https://127.0.0.1:5001/Blocks/IzbrisiLoptu/" + user.username, {
+    fetch("https://192.168.2.109:5001/Blocks/IzbrisiLoptu/" + user.username, {
         method: "DELETE",
         headers: {
             'Content-type': 'application/json; charset=UTF-8' // Indicates the content 
@@ -613,7 +613,7 @@ function deleteLopta() {
         })
 }
 function deleteSlider() {
-    fetch("https://127.0.0.1:5001/Blocks/IzbrisiSlidera/" + user.username, {
+    fetch("https://192.168.2.109:5001/Blocks/IzbrisiSlidera/" + user.username, {
         method: "DELETE",
         headers: {
             'Content-type': 'application/json; charset=UTF-8' // Indicates the content 
@@ -639,7 +639,7 @@ function postSlider(usr, sliderColor) {
         user: usr,
         color: sliderColor
     }));
-    fetch("https://127.0.0.1:5001/Blocks/UpisiSlidera/", {
+    fetch("https://192.168.2.109:5001/Blocks/UpisiSlidera/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -657,7 +657,7 @@ function postLopta(usr, loptaSpeed) {
         user: usr,
         speed: loptaSpeed
     }));
-    fetch("https://127.0.0.1:5001/Blocks/UpisiLoptu/", {
+    fetch("https://192.168.2.109:5001/Blocks/UpisiLoptu/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

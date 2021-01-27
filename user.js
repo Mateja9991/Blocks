@@ -19,7 +19,7 @@ export class User {
         this.updateDataBase();
     }
     updateDataBase() {
-        fetch("https://127.0.0.1:5001/Blocks/IzmeniUsera/", {
+        fetch("https://192.168.2.109:5001/Blocks/IzmeniUsera/", {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"

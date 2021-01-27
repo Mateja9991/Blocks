@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wEatfMdvFTd15lc8FYjUhDHH+0EzDYOO1oIugKmJ4MdbhPMgJ5NM1pk6JjO7D999M286H0DqzgaaBY03AJypZg==",
+  "dgSpecHash": "PyvNr/ywkn9oSZmkMO+vLBWh4E8vSUavCwjFzLHTEqdc8A1JmNrjq6AEFdkh7hej9PE8UoT8T0wCKu93naCeww==",
   "success": true,
-  "projectFilePath": "/home/mateja/TRECA/WEB_PROGRAMIRANJE/Game1/webapi/webapi.csproj",
+  "projectFilePath": "/home/mateja/TRECA/Projekat/Blocks/webapi/webapi.csproj",
   "expectedPackageFiles": [
     "/home/mateja/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/mateja/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/5.0.1/microsoft.aspnetcore.authentication.jwtbearer.5.0.1.nupkg.sha512",

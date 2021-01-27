@@ -1,0 +1,6 @@
+INSERT INTO Users (username, password, hs , lopta, slider)
+VALUES ("Guest", "123", 0, null, null);
+INSERT INTO Balls (user, speed)
+VALUES ("Guest", 0.3);
+INSERT INTO Sliders (user,color)
+VALUES ("Guest", "#FFFFFF");

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/mateja/TRECA/WEB_PROGRAMIRANJE/Game1/webapi/webapi.csproj": {}
+    "/home/mateja/TRECA/Projekat/Blocks/webapi/webapi.csproj": {}
   },
   "projects": {
-    "/home/mateja/TRECA/WEB_PROGRAMIRANJE/Game1/webapi/webapi.csproj": {
+    "/home/mateja/TRECA/Projekat/Blocks/webapi/webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mateja/TRECA/WEB_PROGRAMIRANJE/Game1/webapi/webapi.csproj",
+        "projectUniqueName": "/home/mateja/TRECA/Projekat/Blocks/webapi/webapi.csproj",
         "projectName": "webapi",
-        "projectPath": "/home/mateja/TRECA/WEB_PROGRAMIRANJE/Game1/webapi/webapi.csproj",
+        "projectPath": "/home/mateja/TRECA/Projekat/Blocks/webapi/webapi.csproj",
         "packagesPath": "/home/mateja/.nuget/packages/",
-        "outputPath": "/home/mateja/TRECA/WEB_PROGRAMIRANJE/Game1/webapi/obj/",
+        "outputPath": "/home/mateja/TRECA/Projekat/Blocks/webapi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/mateja/.nuget/NuGet/NuGet.Config"

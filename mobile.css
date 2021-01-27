@@ -1,0 +1,220 @@
+
+
+
+html,
+body {
+  margin: 0;  
+  height:100%;
+  width: 100%;
+  background-color: #550144;
+}
+#rest {
+  flex: 30 1;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.highscorebar {
+ display:none;
+}
+
+.score {
+  font-size: 200%;
+  color: white;
+}
+.meni {
+  flex:1 1 5%;
+  height: 100%;
+  background-color: #261029;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  z-index:10;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.container {
+  flex: 100 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-content:flex-start;
+}
+.blocks,
+.mainblock {
+  width: 7%;
+  height: 10%;
+  background-color: white;
+  margin: 0.3%;
+  border-radius: 2px;
+}
+.blocks { 
+  flex: 0 0 10%;
+}
+
+.mainblock {
+  border-radius: 30px;
+  width: 6%;
+  height: 15%;
+  position: absolute;
+  left: 10%;
+  top: 42.5%;
+}
+.lopta {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: #ff00ff;
+  border-radius: 50%;
+  display: inline-block;
+}
+.invisible,
+.filler {
+ visibility: hidden;
+}
+.picks {
+  background-color: #261029;
+}
+.Lista{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
+  color:#cc88db;
+  position:absolute;
+  bottom:1%;
+  width: 90%;
+  height: 30%;
+  margin:5%;
+  background-color:  #460158;
+  overflow:auto;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #460158;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff00ff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #51495a;
+}
+
+.invalid{
+  border:2px solid red;
+}
+
+
+
+
+.menibar {
+  margin: 3px;
+  width: 5px;
+  height: 36px;
+  background-color: white;
+}
+
+#menicont,
+#pause,
+#create {
+  width: 50px;
+  padding: 15px;
+}
+#pause,
+#create {
+  display: flex;
+  justify-content: center;
+}
+#pause{
+  flex-direction: column;
+}
+#menicont{
+  display: flex;
+  flex-direction: row;
+}
+
+.prvi,
+.drugi,
+.treci,
+.bar1,
+.bar2,
+.bar3,
+.prvip,
+.drugip,
+.trecip,
+.bar1p,
+.bar2p,
+.bar3p,
+.prviplus,
+.drugiplus {
+  border-radius: 6px;
+  transition: 0.7s;
+}
+.treci {
+  opacity: 1;
+}
+.bar1 {
+  transform: translateY(1px) translateX(11px) rotate(45deg);
+}
+.bar2 {
+  transform: rotate(-45deg);
+}
+.bar3 {
+  opacity: 0;
+}
+.clicked {
+  position:absolute;
+  opacity:1;
+  height: 100%;
+  width: 100%;     
+}
+
+.add {
+  margin: 3px;
+  width: 5px;
+  height: 36px;
+  background-color: white;
+}
+.trecip,
+.cetvrtip {
+  visibility: hidden;
+  opacity: 0;
+}
+.pausebar{
+  height: 5px;
+  width: 36px;
+}
+.bar2p {
+  width: 35px;
+  transform: rotate(-53deg) translate(9px, 4px);
+  transition: opacity 0, translate 1s;
+}
+.bar1p {
+  width: 35px;
+  transform: translate(-9px, 6px) rotate(53deg);
+}
+.bar3p { 
+  width: 30px;
+  transform: translate(6px, 5px);
+  opacity: 1;
+  visibility: visible;
+}
+.prviplus {
+  transform: rotate(-90deg) translate(0px, 3px);
+}
+.drugiplus {
+  transform: translateX(-8px);
+}

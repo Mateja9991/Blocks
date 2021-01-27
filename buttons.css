@@ -1,0 +1,89 @@
+.menibar {
+  margin: 6px;
+  width: 36px;
+  height: 5px;
+  background-color: white;
+}
+#menicont:hover,
+#pause:hover,
+#create:hover {
+  background-color: #140015;
+}
+#menicont,
+#pause,
+#create {
+  width: 50px;
+  padding: 15px;
+}
+#pause,
+#create {
+  display: flex;
+  justify-content: center;
+}
+
+.prvi,
+.drugi,
+.treci,
+.bar1,
+.bar2,
+.bar3,
+.prvip,
+.drugip,
+.trecip,
+.bar1p,
+.bar2p,
+.bar3p,
+.prviplus,
+.drugiplus {
+  border-radius: 6px;
+  transition: 0.7s;
+}
+.treci {
+  opacity: 1;
+}
+.bar1 {
+  transform: translateY(11px) rotate(45deg);
+}
+.bar2 {
+  transform: rotate(-45deg);
+}
+.bar3 {
+  opacity: 0;
+}
+.clicked {
+  opacity: 0.9;
+  width: 20%;
+}
+.pausebar,
+.add {
+  margin: 3px;
+  width: 5px;
+  height: 36px;
+  background-color: white;
+}
+.trecip,
+.cetvrtip {
+  visibility: hidden;
+  opacity: 0;
+}
+.bar2p {
+  height: 35px;
+  transform: rotate(-53deg) translate(3px, -12px);
+  transition: opacity 0, translate 1s;
+}
+.bar1p {
+  height: 35px;
+  transform: translate(4px, 9px) rotate(53deg);
+}
+.bar3p { 
+  height: 30px;
+  transform: translate(2px, -2px);
+  opacity: 1;
+  visibility: visible;
+}
+.prviplus {
+  transform: rotate(-90deg) translate(0px, 3px);
+}
+.drugiplus {
+  transform: translateX(-8px);
+}

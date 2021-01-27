@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Game
+    </title>
+    <link href="./style.css" media="only screen and (min-device-width: 500px)" type="text/css" rel="stylesheet" />
+    <link href="./buttons.css" media="only screen and (min-device-width: 500px)" type="text/css" rel="stylesheet" />
+    <link href="./form.css" media="only screen and (min-device-width: 500px)" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./mobile.css" type="text/css" />
+</head>
+
+<body>
+    <div class="meni">
+        <div id="menicont">
+            <div class="prvi menibar"></div>
+            <div class="drugi menibar"></div>
+            <div class="treci menibar"></div>
+        </div>
+        <div id="pause">
+            <div class="trecip bar3p pausebar"></div>
+            <div class="prvip bar1p pausebar"></div>
+            <div class="drugip bar2p pausebar"></div>
+            <div class="cetvrtip pausebar"></div>
+        </div>
+        <div id="create">
+            <div class="prviplus add"></div>
+            <div class="drugiplus add"></div>
+        </div>
+        <div class="forms">
+            <div class="forma">
+                <div class="button sign">Login</div>
+                <div class="form">
+                    <div class="text">
+                        <p>Username:</p>
+                        <p>Password:</p>
+                    </div>
+                    <div class="inp">
+                        <input class="usrin" type="text">
+                        <input class="pswin" type="password">
+                    </div>
+                </div>
+                <button class="sub1 submitinput sub">Login</button>
+            </div>
+            <div class="forma">
+                <div class="button register">Register</div>
+                <div class="formtwo">
+                    <div class="text">
+                        <p>Username:</p>
+                        <p>Password:</p>
+                        <p>Color:</p>
+                        <p>Brzina:</p>
+                    </div>
+                    <div class="inp">
+                        <input class="usrout" type="text">
+                        <input class="pswout" type="password">
+                        <input class="sliderColor" type="text" value="#FFFFFF">
+                        <div class=" slidecontainer">
+                            <input type="range" min="1" max="60" value="30" class="slider" id="myRange">
+                        </div>
+                    </div>
+                </div>
+                <button class="sub2 submitinput sub">Create Account</button>
+
+            </div>
+            <div class="forma">
+                <div class="button delete">Delete User</div>
+                <div class="formthree">
+                </div>
+                <button class="sub3 submitinput sub">Delete</button>
+            </div>
+            <div class="button RangLista">RangLista</div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="rest"></div>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>

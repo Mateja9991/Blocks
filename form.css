@@ -1,0 +1,95 @@
+
+.form,
+.formtwo ,
+.formthree{
+  display: none;
+}
+.forms {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.formClicked {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.text {
+  color: white;
+  font-size: 25px;
+}
+
+.inp,
+.text {
+  flex: 1 0;
+  display: flex;
+  flex-direction: column;
+  margin: 7px;
+  margin-top: 30px;
+}
+p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+input,button {
+  height: 23px;
+  width: 200px;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.forma{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button,.sub {
+  display: none;
+}
+.buttonClicked {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 35px;
+  width: 100%;
+  display: block;
+  color: white;
+}
+.buttonClicked:hover {
+  background-color: #140015;
+}
+.submitinput{
+  outline:none;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #550144;
+  color: white;
+  border:0px;
+  font-size: 20px;
+  width: 50%;
+  height:25%;
+}
+.submitinput:hover{
+  background-color: #140015;
+}
+
+.slidecontainer {
+  width: 100%; 
+}
+
+.slider {
+  margin-top:12%;
+  color: #342155;
+  width: 100%;
+  height: 10%;
+  background: #ffffff;
+  outline: none; 
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+.slider:hover {
+  opacity: 1;
+}
+.sub3{
+  margin-top: 20%;
+  margin-bottom: 12%;
+}
